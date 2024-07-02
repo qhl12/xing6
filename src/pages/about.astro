@@ -11,21 +11,19 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 ---
 
-<Layout title="About">
+<Layout title="中国航天重大任务">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
+      <Fragment slot="title">中国航天重大任务</Fragment>
+      <Fragment slot="desc"></Fragment>
     </Sectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with Astro.
+        中国航天发展愿景
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
+        全面建成航天强国，持续提升科学认知太空能力、自由进出太空能力、高效利用太空能力、有效治理太空能力，成为国家安全的维护者、科技自立自强的引领者、经济社会高质量发展的推动者、外空科学治理的倡导者和人类文明发展的开拓者，为建设社会主义现代化强国、推动人类和平与发展的崇高事业作出积极贡献。
       </p>
     </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
@@ -43,7 +41,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
               />
             </div>
 
-            <div class="mt-4 text-center">
+            <div class="mt-4 text-left">
               <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
               <h3 class="text-sm text-slate-500">
                 {teamMemberEntry.data.title}
